@@ -6,52 +6,112 @@
 
 html {
    scroll-behavior: smooth;
+   overflow-x: hidden;
 }
 
 #wrapper {
-   height: 100vh;
    width: 500%;
 }
 
 #wrapper section {
    float: left;
    width: 20%;
-   height: 100vh;
    position: relative;
 }
 
 #rightarrow {
    position: absolute;
    font-size: 40px;
-   right: 2%;
+   right: 4%;
    bottom: 50%;
    color: grey;
+   transform: rotate(-90deg) scale(.8) scaleX(1.1);
 }
 
 #leftarrow {
    position: absolute;
    font-size: 40px;
-   left: 2%;
+   left: 4%;
    bottom: 50%;
    color: grey;
+   transform: rotate(90deg) scale(.8) scaleX(1.1);
 }
 
+
 #section1 {
-   background-color: green;
+   background-color: #f5e1c1;
+   height: 100vh;
 }
 
 #section2 {
    background-color: red;
+   height: 200vh;
 }
+
+#section2 #leftarrow {
+   bottom: 75%;
+}
+
+#section2 #rightarrow {
+   bottom: 75%;
+}
+
 
 #section3 {
    background-color: yellow;
+   width: 100%;
+   height: 100vh;
 }
 
 #section4 {
    background-color: blue;
+   height: 100vh;
 }
 
 #section5 {
    background-color: purple;
+   height: 100vh;
+}
+
+.arrow {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+}
+
+.arrow span {
+   display: block;
+   width: 30px;
+   height: 30px;
+   border-bottom: 5px solid #06A8FF;
+   border-right: 5px solid #06A8FF;
+   transform: rotate(45deg);
+   margin: -10px;
+   animation: animate 2.5s infinite;
+}
+
+.arrow span:nth-child(2) {
+   animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+   animation-delay: -0.4s;
+}
+
+@keyframes animate {
+   0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-15px, -20px);
+   }
+
+   50% {
+      opacity: 1;
+   }
+
+   100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(15px, 20px);
+   }
 }
