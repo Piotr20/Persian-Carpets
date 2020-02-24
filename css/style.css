@@ -26,6 +26,7 @@ html {
    bottom: 50%;
    color: grey;
    transform: rotate(-90deg) scale(.8) scaleX(1.1);
+   z-index: 99;
 }
 
 #leftarrow {
@@ -35,6 +36,7 @@ html {
    bottom: 50%;
    color: grey;
    transform: rotate(90deg) scale(.8) scaleX(1.1);
+   z-index: 99;
 }
 
 
@@ -64,7 +66,6 @@ html {
 }
 
 #section4 {
-   background-color: blue;
    height: 100vh;
 }
 
