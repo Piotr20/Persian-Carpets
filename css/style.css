@@ -27,7 +27,9 @@ html {
    bottom: 50%;
    color: grey;
    transform: rotate(-90deg) scale(.8) scaleX(1.1);
-   z-index: 99;
+   <<<<<<< HEAD z-index: 9;
+   =======z-index: 99;
+   >>>>>>>f69632ba7cad60e0466ea782da22d48bcedc446d
 }
 
 #leftarrow {
@@ -37,7 +39,9 @@ html {
    bottom: 50%;
    color: grey;
    transform: rotate(90deg) scale(.8) scaleX(1.1);
-   z-index: 99;
+   <<<<<<< HEAD z-index: 9;
+   =======z-index: 99;
+   >>>>>>>f69632ba7cad60e0466ea782da22d48bcedc446d
 }
 
 
@@ -71,7 +75,7 @@ html {
 }
 
 #section5 {
-   background-color: purple;
+   background-color: #f5e1c1;
    height: 100vh;
 }
 
@@ -116,4 +120,36 @@ html {
       opacity: 0;
       transform: rotate(45deg) translate(15px, 20px);
    }
+}
+
+#bigframe {
+   position: absolute;
+   background-color: rgb(255, 236, 208);
+   width: 1200px;
+   height: 600px;
+   border-radius: 15px;
+   display: block;
+   margin-left: 120px;
+   margin-right: auto;
+   margin-top: 100px;
+   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+#frame {
+   position: relative;
+   top: -50px;
+   width: 100%;
+   height: 100%;
+   border: none;
+   border-radius: 15px;
+}
+
+#mapwrapper {
+   width: 550px;
+   height: 600px;
+   overflow: hidden;
+   position: absolute;
+   margin-top: 25px;
+   right: 2%;
+   border-radius: 15px;
 }
