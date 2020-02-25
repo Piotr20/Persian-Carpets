@@ -169,12 +169,13 @@ html {
 }
 
 .info h5 {
+   font-size: 1.3em;
    line-height: 1.5em;
 }
 
 .info p {
    line-height: 1.2em;
-   font-size: 0.9em;
+   font-size: 1.1em;
 }
 
 #some {
@@ -191,18 +192,13 @@ html {
    text
 }
 
-#bazar {
-   float: left;
-}
+#bazar {}
 
-#showroom {
-   float: left;
-   margin-left: 3em;
-}
+#showroom {}
 
 #contact {
    position: absolute;
-   bottom: 7em;
+   bottom: 6.5em;
    width: 19em;
    display: flex;
    justify-content: space-between;
@@ -210,4 +206,8 @@ html {
 
 #contact h5 {
    font-size: 1.1em;
+}
+
+#video {
+   width: 100vw;
 }
