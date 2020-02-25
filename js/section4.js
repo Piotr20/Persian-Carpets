@@ -22,7 +22,27 @@ window.addEventListener('scroll', function () {
                }, 6500)
 
           }
+          div[0].addEventListener('click', () => {
+               div[0].classList.toggle('active4');
+               div[0].classList.remove('active1');
 
+          });
+          div[1].addEventListener('click', () => {
+               div[1].classList.toggle('active4');
+               div[1].classList.remove('active1');
+          });
+          div[2].addEventListener('click', () => {
+               div[2].classList.toggle('active4');
+               div[2].classList.remove('active1');
+          });
+          div[3].addEventListener('click', () => {
+               div[3].classList.toggle('active4');
+               div[3].classList.remove('active1');
+          });
+          div[4].addEventListener('click', () => {
+               div[4].classList.toggle('active4');
+               div[4].classList.remove('active1');
+          });
      } else {
           console.log('Not in the viewport... whomp whomp');
      }
