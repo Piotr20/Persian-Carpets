@@ -1,7 +1,6 @@
 window.addEventListener('scroll', function () {
      const section_4 = document.querySelector('#section4');
      const sectionBonding = section_4.getBoundingClientRect();
-
      if (
           sectionBonding.top >= 0 &&
           sectionBonding.left >= 0 &&
@@ -115,32 +114,67 @@ var carpetDown = document.getElementById('whitedown');
 ;
 (function () {
 
-    var throttle = function (type, name, obj) {
-        var obj = obj || window;
-        var running = false;
-        var func = function () {
-            if (running) {
-                return;
-            }
-            running = true;
-            requestAnimationFrame(function () {
-                obj.dispatchEvent(new CustomEvent(name));
-                running = false;
-            });
-        };
-        obj.addEventListener(type, func);
-    };
+     var throttle = function (type, name, obj) {
+          var obj = obj || window;
+          var running = false;
+          var func = function () {
+               if (running) {
+                    return;
+               }
+               running = true;
+               requestAnimationFrame(function () {
+                    obj.dispatchEvent(new CustomEvent(name));
+                    running = false;
+               });
+          };
+          obj.addEventListener(type, func);
+     };
 
-    throttle("scroll", "optimizedScroll");
+     throttle("scroll", "optimizedScroll");
 })();
 
 window.addEventListener("optimizedScroll", function () {
 
 
 
-    carpetDown.style.transform = "translateY(" + window.pageYOffset / 0.7 + "px)";
+     carpetDown.style.transform = "translateY(" + window.pageYOffset / 0.3 + "px)";
 
 
 
 
 })
+window.addEventListener('scroll', function () {
+     const section_3 = document.querySelector('#section3');
+     const sectionBonding2 = section_3.getBoundingClientRect();
+     var video = document.querySelector('#section3 video');
+     if (
+          sectionBonding2.top >= 0 &&
+          sectionBonding2.left >= 0 &&
+          sectionBonding2.right <= (window.innerWidth || document.documentElement.clientWidth)
+     ) {
+          video.play();
+
+     } else {
+          console.log('Not in the viewport... whomp whomp');
+          video.pause();
+          video.muted();
+     }
+});
+window.addEventListener('scroll', function () {
+     const section_1 = document.querySelector('#section1');
+     const sectionBonding3 = section_1.getBoundingClientRect();
+     var video2 = document.querySelector('#section1 video');
+     if (
+          sectionBonding3.top >= 0 &&
+          sectionBonding3.left >= 0 &&
+          sectionBonding3.right <= (window.innerWidth || document.documentElement.clientWidth)
+     ) {
+          video2.play();
+
+
+     } else {
+          console.log('Not in the viewport... whomp whomp');
+          video2.pause();
+          video2.muted();
+     }
+});
