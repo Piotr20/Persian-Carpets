@@ -62,3 +62,38 @@ window.addEventListener('scroll', function () {
           console.log('Not in the viewport... whomp whomp');
      }
 });
+
+var carpetDown = document.getElementById('whitedown');
+
+;
+(function () {
+
+    var throttle = function (type, name, obj) {
+        var obj = obj || window;
+        var running = false;
+        var func = function () {
+            if (running) {
+                return;
+            }
+            running = true;
+            requestAnimationFrame(function () {
+                obj.dispatchEvent(new CustomEvent(name));
+                running = false;
+            });
+        };
+        obj.addEventListener(type, func);
+    };
+
+    throttle("scroll", "optimizedScroll");
+})();
+
+window.addEventListener("optimizedScroll", function () {
+
+
+
+    carpetDown.style.transform = "translateY(" + window.pageYOffset / 0.7 + "px)";
+
+
+
+
+})
