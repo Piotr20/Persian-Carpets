@@ -188,12 +188,9 @@ html {
 #some a {
    text-decoration: none;
    color: #8c1b24;
-   text
+   text-decoration: none;
 }
 
-#bazar {}
-
-#showroom {}
 
 #contact {
    position: absolute;
