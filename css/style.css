@@ -205,5 +205,6 @@ html {
 }
 
 #video {
-   width: 100vw;
+   object-fit: cover;
+   width: 100%;
 }

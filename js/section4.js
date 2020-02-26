@@ -46,7 +46,6 @@ window.addEventListener('scroll', function () {
 
           let icon = document.querySelectorAll(".animation_container div i");
           icon[0].addEventListener('click', () => {
-               div[0].classList.remove('active4');
                div[0].addEventListener('click', () => {
                     div[0].classList.toggle('active4');
                     icon[0].style.fontSize = '0' + 'px';
@@ -56,6 +55,54 @@ window.addEventListener('scroll', function () {
           });
           div[0].addEventListener('click', () => {
                icon[0].style.fontSize = '100' + 'px';
+
+          });
+          icon[1].addEventListener('click', () => {
+               div[1].addEventListener('click', () => {
+                    div[1].classList.toggle('active4');
+                    icon[1].style.fontSize = '0' + 'px';
+                    icon[1].style.transitionDelay = "0s";
+               });
+
+          });
+          div[1].addEventListener('click', () => {
+               icon[1].style.fontSize = '100' + 'px';
+
+          });
+          icon[2].addEventListener('click', () => {
+               div[2].addEventListener('click', () => {
+                    div[2].classList.toggle('active4');
+                    icon[2].style.fontSize = '0' + 'px';
+                    icon[2].style.transitionDelay = "0s";
+               });
+
+          });
+          div[2].addEventListener('click', () => {
+               icon[2].style.fontSize = '100' + 'px';
+
+          });
+          icon[3].addEventListener('click', () => {
+               div[3].addEventListener('click', () => {
+                    div[3].classList.toggle('active4');
+                    icon[3].style.fontSize = '0' + 'px';
+                    icon[3].style.transitionDelay = "0s";
+               });
+
+          });
+          div[3].addEventListener('click', () => {
+               icon[3].style.fontSize = '100' + 'px';
+
+          });
+          icon[4].addEventListener('click', () => {
+               div[4].addEventListener('click', () => {
+                    div[4].classList.toggle('active4');
+                    icon[4].style.fontSize = '0' + 'px';
+                    icon[4].style.transitionDelay = "0s";
+               });
+
+          });
+          div[4].addEventListener('click', () => {
+               icon[4].style.fontSize = '100' + 'px';
 
           });
      } else {
